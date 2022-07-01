@@ -1,5 +1,6 @@
 package cliente;
 
+
 import salones.Salon;
 
 public interface Cliente {

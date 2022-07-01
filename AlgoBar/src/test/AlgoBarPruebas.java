@@ -1,16 +1,10 @@
-package test;
 
-import cliente.Asociado;
-import cliente.AsociadoPremium;
-import cliente.NoSocio;
 import org.junit.Test;
-import cliente.Cliente;
-import salones.Salon;
-import salones.SalonDeCine;
-import salones.SalonDeMusica;
-import salones.SalonGastronomico;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import cliente.*;
+import salones.*;
 
 public class AlgoBarPruebas {
 

@@ -2,10 +2,7 @@ package cliente;
 
 import salones.Salon;
 
-public class Asociado implements Cliente{
-
-    private int cantidadMinimaInivtados = 7;
-
+public class NoSocio implements Cliente {
     @Override
     public boolean reservarSala(Salon sala, int cantidadInvitados) {
         return sala.reservarSala(this, cantidadInvitados);
@@ -13,10 +10,6 @@ public class Asociado implements Cliente{
 
     @Override
     public boolean reservarSalaCine(int cantidadInvitados) {
-        if(cantidadInvitados >= cantidadMinimaInivtados){
-            return true;
-        }
-
         return false;
     }
 
@@ -27,6 +20,6 @@ public class Asociado implements Cliente{
 
     @Override
     public boolean reservarSalaDeMusica(int cantidadInvitados) {
-        return true;
+        return false;
     }
 }

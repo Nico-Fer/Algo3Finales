@@ -2,9 +2,10 @@ package salones;
 
 import cliente.Cliente;
 
-public class SalonDeMusica implements Salon{
+public class SalonDeCine implements Salon {
+
     @Override
     public boolean reservarSala(Cliente cliente, int cantidadInvitados) {
-        return cliente.reservarSalaDeMusica(cantidadInvitados);
+        return cliente.reservarSalaCine(cantidadInvitados);
     }
 }
